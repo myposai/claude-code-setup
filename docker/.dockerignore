@@ -1,0 +1,15 @@
+.git
+.claude
+.planning
+.env*
+!.env.docker
+__pycache__
+*.pyc
+.venv
+venv
+jobs/
+_temp_workflow.json
+.pytest_cache
+*.egg-info
+dist
+build

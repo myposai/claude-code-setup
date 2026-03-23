@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  n8n-agent:
+    build: .
+    container_name: n8n-ai-agent
+    restart: unless-stopped
+    env_file:
+      - .env.docker
+    volumes:
+      - ./jobs:/app/jobs
+      - ./references:/app/references
+      - ./credentials_map.json:/app/credentials_map.json
